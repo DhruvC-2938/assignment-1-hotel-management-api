@@ -19,6 +19,8 @@ app.use(requestLogger);
 
 let users = [];
 let hotels = [];
+let nextUserId = 1;
+let nextHotelId = 1;
 passport.use(
     new LocalStrategy((username, password, done) => {
 
